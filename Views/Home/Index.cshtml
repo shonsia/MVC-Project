@@ -2,28 +2,194 @@
     ViewData["Title"] = "Shaun Sia | Portfolio";
 }
 
-<div style="max-width: 960px; margin: 4rem auto; padding: 2rem; font-family: Arial, sans-serif; color: #111827;">
-    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Shaun Sia</h1>
-    <p style="font-size: 1.1rem; letter-spacing: 0.08em; text-transform: uppercase; color: #4b5563; margin-bottom: 2rem;">
-        Graphic Designer • UI/UX • Video Editor • Photographer
-    </p>
+<header class="topbar">
+    <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#hero" aria-label="Shaun Sia home">
+            <span class="brand-mark">✦</span>
+            <span>Shon</span>
+        </a>
 
-    <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
-        I create thoughtful visuals and digital experiences that connect storytelling, design, and technology.
-    </p>
+        <div class="nav-links desktop-only">
+            <a href="#work">Video</a>
+            <a href="#design">Design</a>
+            <a href="#photo">Photo</a>
+            <a href="#about">About</a>
+            <a href="#tools">Tools</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-        <div style="padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 12px; background: #f9fafb;">
-            <h2 style="margin-top: 0; font-size: 1.1rem;">Design</h2>
-            <p>Branding, layouts, and polished visual systems.</p>
+        <div class="social-icons desktop-only">
+            <a href="https://instagram.com/shauncena17" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+            <a href="https://youtube.com/@@oma1036" target="_blank" rel="noreferrer" aria-label="YouTube">▶</a>
         </div>
-        <div style="padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 12px; background: #f9fafb;">
-            <h2 style="margin-top: 0; font-size: 1.1rem;">UI/UX</h2>
-            <p>User-focused interfaces built for clarity and impact.</p>
+
+        <button class="menu-toggle mobile-only" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu mobile-only" hidden>
+        <a href="#work">Video</a>
+        <a href="#design">Design</a>
+        <a href="#photo">Photo</a>
+        <a href="#about">About</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="hero">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+        <div class="star-field" aria-hidden="true">
+            <span class="star star-1">✦</span>
+            <span class="star star-2">✦</span>
+            <span class="star star-3">✦</span>
+            <span class="star star-4">✦</span>
+            <span class="star star-5">✦</span>
+            <span class="star star-6">✦</span>
+            <span class="star star-7">✦</span>
+            <span class="star star-8">✦</span>
         </div>
-        <div style="padding: 1.25rem; border: 1px solid #e5e7eb; border-radius: 12px; background: #f9fafb;">
-            <h2 style="margin-top: 0; font-size: 1.1rem;">Media</h2>
-            <p>Video editing and photography for modern storytelling.</p>
+
+        <div class="container hero-inner">
+            <p class="eyebrow">Shaun Sia</p>
+            <h1>hi, i'm shon.</h1>
+            <p class="subtitle">Graphic Designer · UI/UX Designer · Video Editor · Creative Lead</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="#work">View My Work</a>
+                <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>2026</span>
+            <div class="scroll-line-wrap">
+                <span class="scroll-line"></span>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="work">
+        <div class="container">
+            <p class="section-kicker">Video</p>
+            <div class="section-head">
+                <h2>Video Work</h2>
+                <a href="https://youtube.com/@@oma1036" target="_blank" rel="noreferrer" class="follow-link">
+                    <span class="play-badge">▶</span>
+                    @@oma1036
+                </a>
+            </div>
+            <div class="video-grid" id="video-grid"></div>
+            <div class="tag-row" id="video-tags"></div>
+        </div>
+    </section>
+
+    <section class="portfolio-section dark-section" id="design">
+        <div class="container">
+            <p class="section-kicker">Graphic Design</p>
+            <div class="section-head">
+                <h2>Design</h2>
+                <a href="https://instagram.com/omai.design" target="_blank" rel="noreferrer" class="follow-link">
+                    <span class="insta-badge">◎</span>
+                    @@omai.design
+                </a>
+            </div>
+            <div class="card-grid design-grid" id="design-grid"></div>
+            <div class="tag-row green-tags" id="design-tags"></div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="photo">
+        <div class="container">
+            <p class="section-kicker">Photography</p>
+            <div class="section-head">
+                <h2>Photo</h2>
+                <a href="https://instagram.com/shauncena17" target="_blank" rel="noreferrer" class="follow-link">
+                    <span class="insta-badge">◎</span>
+                    @@shauncena17
+                </a>
+            </div>
+            <div class="card-grid photo-grid" id="photo-grid"></div>
+            <div class="tag-row orange-tags" id="photo-tags"></div>
+        </div>
+    </section>
+
+    <section class="portfolio-section dark-section" id="tools">
+        <div class="container">
+            <p class="section-kicker">Programs I Use</p>
+            <h2 class="tools-title">Tools</h2>
+            <div class="tools-list" id="tools-list"></div>
+        </div>
+    </section>
+
+    <section class="portfolio-section about-section" id="about">
+        <div class="container">
+            <p class="section-kicker">About</p>
+            <div class="about-grid">
+                <div class="about-quote">
+                    <h2>Design.<br /><span>Video.</span><br />Creative.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>Hi! I'm <strong>Shaun Sia</strong>, otherwise known as <span>Omai</span> online. I'm a Graphic Designer and UI/UX Designer with extensive experience leading creative teams.</p>
+                    <p>I specialize in <strong>Photoshop</strong> for graphics and photo manipulation, create <strong>short-form video content</strong> with CapCut and DaVinci Resolve, and dabble in photography as a creative pursuit.</p>
+                    <p>Currently in college, I'm leading creative committees for various campus organizations — just as I spearheaded the publication team in high school.</p>
+                    <div class="about-links">
+                        <a href="https://instagram.com/shauncena17" target="_blank" rel="noreferrer">@@shauncena17</a>
+                        <a href="https://youtube.com/@@oma1036" target="_blank" rel="noreferrer">@@oma1036</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+        <div class="footer-intro">
+            <p class="section-kicker">Contact</p>
+            <h2>Let's work<br /><span>together.</span></h2>
+        </div>
+
+        <div class="contact-list">
+            <p>Open for creative collaborations, design projects, and video work. Hit me up on social.</p>
+            <a class="contact-card" href="https://instagram.com/shauncena17" target="_blank" rel="noreferrer">
+                <span class="contact-mark green">◎</span>
+                <span>
+                    <strong>Instagram</strong>
+                    <small>@@shauncena17</small>
+                </span>
+            </a>
+            <a class="contact-card" href="https://youtube.com/@@oma1036" target="_blank" rel="noreferrer">
+                <span class="contact-mark red">▶</span>
+                <span>
+                    <strong>YouTube</strong>
+                    <small>@@oma1036</small>
+                </span>
+            </a>
+            <a class="contact-card" href="https://instagram.com/omai.design" target="_blank" rel="noreferrer">
+                <span class="contact-mark purple">◎</span>
+                <span>
+                    <strong>Design Instagram</strong>
+                    <small>@@omai.design</small>
+                </span>
+            </a>
+            <a class="contact-card" href="mailto:siashaun4@gmail.com">
+                <span class="contact-mark neutral">✉</span>
+                <span>
+                    <strong>Email</strong>
+                    <small>siashaun4@gmail.com</small>
+                </span>
+            </a>
         </div>
     </div>
-</div>
+
+    <div class="container footer-bottom">
+        <span>© 2026 Shooting Stars Studio</span>
+        <span>Shaun Sia — Omai</span>
+    </div>
+</footer>

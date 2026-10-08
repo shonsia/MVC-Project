@@ -15,8 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var siteEntry = Path.Combine(_environment.WebRootPath, "index.html");
-        return PhysicalFile(siteEntry, "text/html");
+        return View();
     }
 
     public IActionResult Privacy()
