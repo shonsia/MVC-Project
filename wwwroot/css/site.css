@@ -34,22 +34,23 @@ body {
     margin: 20px 35px 20px 20px;
     min-height: calc(100vh - 200px);
     box-shadow: 10px 10px 0 #e4d237;
+    min-width: 1800px;
 }
 
 .profile-pic img {
-    width: 750px;
-    height: 750px;
-    max-width: none;
     border-radius: 30%;
     object-fit: cover;
     border: 10px solid #bdd6f2;
     box-shadow: 0 20px 40px rgba(200, 150, 30, 0.35);
-    margin-right:200px;
+    width: 500px;
+    height: 500px;
+    max-width: none;
+    flex-shrink: 0;
 }
 
 .profile-info {
     flex: 1;
-    min-width: 0;
+    min-width: 600px;
     padding: 0;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,7 +75,7 @@ body {
     }
 
     .profile-info h3 {
-        font-size:50px;
+        font-size: 50px;
     }
 
     .profile-info h4 {
@@ -126,13 +127,7 @@ body {
         display: none;
     }
 
-@media (max-width: 800px) {
-    .profile-card {
-        flex-direction: column-reverse;
-        min-height: 0;
-        padding: 30px 20px;
-    }
-}
+
 
 
 .AislePics,
@@ -224,31 +219,31 @@ body {
 body:has(.WelcomeCard) {
     background: linear-gradient(135deg, #fff3a8, #fffde7);
 }
-.WelcomeCard h1{
+
+.WelcomeCard h1 {
     font-size: 220px;
 }
 
-.WelcomeCard a{
+.WelcomeCard a {
     background: white;
-    font-size:100px;
-    padding:12px 50px;
-    display:inline-block;
-    border-radius:999px;
-    color:#1e3a8a;
+    font-size: 100px;
+    padding: 12px 50px;
+    display: inline-block;
+    border-radius: 999px;
+    color: #1e3a8a;
     border: 10px solid #eaf4fb;
-    margin:10px;
-
+    margin: 10px;
 }
 
 .WelcomeCard a {
     background: white;
 }
 
-.WelcomeCard a:hover {
-    background: #bdd6f2;
+    .WelcomeCard a:hover {
+        background: #bdd6f2;
     }
 
 .navbar {
     background-color: lightcyan;
-    font-size:30px;
+    font-size: 30px;
 }
