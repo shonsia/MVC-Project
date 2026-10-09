@@ -6,17 +6,9 @@ namespace MVCProject.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly IWebHostEnvironment _environment;
-
-    public HomeController(IWebHostEnvironment environment)
-    {
-        _environment = environment;
-    }
-
     public IActionResult Index()
     {
-        var siteEntry = Path.Combine(_environment.WebRootPath, "index.html");
-        return PhysicalFile(siteEntry, "text/html");
+        return View();
     }
 
     public IActionResult Privacy()
